@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css">
     <title>Prework Study Guide</title>
   </head>
   <body>
@@ -25,7 +26,15 @@
       <section class="card" id="css-section">
         <h2>CSS</h2>
         <ul>
-          <li>Add CSS notes here</li>
+          <li>How to link .CSS to .html: In "head", after the final "meta" and before "title" element, add: link rel="name1" href="name2" (all inside < >).</li>
+           <ul>
+            <li>the "link" element creates the link</li>
+            <li>"name1" for "rel" attribute specifies the relationship between the current document and linked document resource.</li>
+            <li>"name2" for "href" attribute specifies location of the external resource. Location is derived from the location of the .html location.</li>
+           </ul>
+          <li>A margin indicates how much space we want around the outside of an element.</li>
+          <li>A padding indicates how much space we want around the content inside an element.</li>
+          <li>Class attributes: in CSS, indicated by "." followed by name for class selector.</li>
         </ul>
       </section>
    
@@ -33,12 +42,29 @@
         <h2>Git</h2>
         <ul>
           <li>git status: checks what branch we are currently on</li>
-          <li>git checkout -b branch-name: creates a new branch and switches to it. (replace name with "branch-name")</li>
-          <li>checkout = move the working branch to a new branch</li>
-          <li>-b = create a new branch</li>
           <li>git pull origin main = get latest version of the project on your local computer</li>
-          <li>git add -A = Commit all files in the working branch.</li>
-          <li>git commit -m "insert message here" = associate message to commit.</li>
+          <li>git work flow for working locally.</li>
+           <ol>
+            <li>get to repo on Github. press "code" button and copy SSH</li>
+            <li>go to Gitbash. navigate to desired folder. enter: git clone "paste SSH here" = download repo content in current directory</li>
+            <li>git checkout -b "enter new branch name" = create and change to working branch</li>
+             <ul>
+              <li>checkout = move the working branch to a new branch</li>
+              <li>-b = create a new branch</li>
+             </ul>
+            <li>git status = to double-check you are working in the new branch and not in the main branch</li>
+            <li>work and make changes</li>
+            <li>git add -A = Commit all files in the working branch.</li>
+             <ul>
+              <li>add = add modifications in the current working branch to the staging area.</li>
+              <li>-A = indicates that we want to add all changes.</li>
+             </ul>
+            <li>git commit -m "insert message here" = associate message to commit.</li>
+            <li>"git pull origin main" to check for message: Already up to date. </li>
+            <li>git push origin "insert feature name" = upload changes to github</li>
+            <li>go on github and get you your working branch under repo </li>
+            <li>create pull request</li>
+           </ol>
         </ul>
       </section>
    
